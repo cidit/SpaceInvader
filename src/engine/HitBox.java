@@ -8,13 +8,14 @@ package engine;
  */
 public class HitBox {
 
-	private Coordinate coordinate;
-	private Dimension dimension;
+	Coordinate coordinate;
+	Dimension dimension;
 
-	private int left, right, bottom, top;
+	int left, right, bottom, top;
 
 	/**
 	 * Constructor for a mutable hit box.
+	 * 
 	 * @param coordinate inferior left corner
 	 * @param dimension
 	 */
@@ -73,7 +74,7 @@ public class HitBox {
 		c4 = this.top >= other.bottom;
 		return (c1 && c2) || (c2 && c3) || (c3 && c4) || (c4 && c1);
 	}
-	
+
 	public boolean contains(HitBox other) {
 		boolean c1, c2, c3, c4;
 		c1 = this.right >= other.left;

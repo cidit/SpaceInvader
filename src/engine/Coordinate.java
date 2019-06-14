@@ -15,6 +15,7 @@ public final class Coordinate {
 
 	/**
 	 * Constructor for an immutable position.
+	 * 
 	 * @param x
 	 * @param y
 	 */

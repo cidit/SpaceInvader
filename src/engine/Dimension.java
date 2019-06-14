@@ -12,6 +12,7 @@ public final class Dimension {
 
 	/**
 	 * Constructor for an immutable rectangle.
+	 * 
 	 * @param width
 	 * @param height
 	 */
@@ -27,10 +28,10 @@ public final class Dimension {
 	public int getHeight() {
 		return height;
 	}
-	
+
 	@Override
 	public String toString() {
 		return width + ";" + height;
 	}
-	
+
 }

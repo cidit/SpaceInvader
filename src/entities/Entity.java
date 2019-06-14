@@ -67,5 +67,5 @@ public abstract class Entity {
 	public enum Allegiance {
 		FRIENDLY, HOSTILE, NEUTRAL, NONE, PASSIVE;
 	}
-
+	
 }

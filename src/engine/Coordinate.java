@@ -33,7 +33,7 @@ public final class Coordinate {
 	}
 
 	public static float distance(Coordinate a, Coordinate b) {
-		return (float) sqrt(pow(a.x - b.x, 2) + pow(a.y - b.y, 2));
+		return (float) sqrt(pow((float) a.x - (float) b.x, 2) + pow((float) a.y - (float) b.y, 2));
 	}
 
 	@Override

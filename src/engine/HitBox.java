@@ -83,5 +83,9 @@ public class HitBox {
 		c4 = this.top >= other.bottom;
 		return c1 && c2 && c3 && c4;
 	}
+	
+	public boolean isContaindIn(HitBox other) {
+		return other.contains(this);
+	}
 
 }

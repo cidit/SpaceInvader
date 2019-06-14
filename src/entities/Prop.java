@@ -16,7 +16,3 @@ public abstract class Prop extends Entity {
 	}
 
 }
-/* 
- * cannot get damaged
- * 
- */

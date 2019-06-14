@@ -1,4 +1,4 @@
-package spaceinvader;
+package superspaceinvader;
 
 /**
  * This class represents the structure of a game.

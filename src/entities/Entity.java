@@ -13,8 +13,8 @@ import engine.Vector;
  */
 public abstract class Entity {
 
-	protected Allegiance allegiance;
-	protected HitBox hitbox;
+	private Allegiance allegiance;
+	private HitBox hitbox;
 	protected Vector movement;
 
 	public Entity(Allegiance allegiance, HitBox hitbox) {

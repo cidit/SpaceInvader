@@ -5,9 +5,9 @@ import entities.Prop;
 
 public abstract class Drone extends Prop {
 
-	public Drone(Allegiance allegiance, HitBox hitbox) {
-		super(allegiance, hitbox);
-		// TODO Auto-generated constructor stub
+	public Drone(HitBox hitbox) {
+		super(Allegiance.FRIENDLY, hitbox);
+		
 	}
 
 }

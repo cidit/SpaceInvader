@@ -1,6 +1,10 @@
 package entities;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import engine.HitBox;
+import entities.effects.Effect;
 
 /**
  * This class represents an Entity that can die.
@@ -10,13 +14,17 @@ import engine.HitBox;
  */
 public abstract class Actor extends Entity {
 	
-	protected final int max_health;
-	protected int health;
+	private final int max_health;
+	private int health;
+	private Status status;
+	
+	protected List<Effect> activeEffects = new ArrayList<Effect>();
 
 	public Actor(Allegiance allegiance, HitBox hitbox, int max_health) {
 		super(allegiance, hitbox);
 		this.max_health = max_health;
 		this.health = max_health;
+		this.status = Status.ALIVE;
 	}
 	
 	public int getMax_Health() {
@@ -29,12 +37,20 @@ public abstract class Actor extends Entity {
 	
 	public void getDamaged(int damage) {
 		health -= damage;
-		health = health < 0 ? 0 : health; 
+		if (health < 0) {
+			health = 0; 
+			status = Status.DEAD;
+		}
 	}
 	
 	public void getHealed(int heal) {
 		health += heal;
-		health = health > max_health ? max_health : health;
+		if (health > max_health)
+			health = max_health;
+	}
+	
+	public Status getStatus() {
+		return status;
 	}
 
 	/**
@@ -44,7 +60,7 @@ public abstract class Actor extends Entity {
 	 *
 	 */
 	public enum Status {
-		ALIVE, DEAD, INVINCIBLE;
+		ALIVE, DEAD;
 	}
 	
 }

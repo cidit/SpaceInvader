@@ -1,12 +1,12 @@
 package entities.effects.bonus;
 
-import entities.Entity;
+import entities.Actor;
 import entities.effects.Effect;
 
 public class LifeSteal extends Effect {
 
 	@Override
-	public void apply(Entity e) {
+	public void apply(Actor e) {
 		// TODO Auto-generated method stub
 
 	}

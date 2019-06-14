@@ -1,7 +1,7 @@
 package entities.effects;
 
 import engine.Counter;
-import entities.Entity;
+import entities.Actor;
 
 public abstract class Effect {
 	
@@ -11,7 +11,7 @@ public abstract class Effect {
 		timer = new Counter(length);
 	}
 	
-	public abstract void apply(Entity e);
+	public abstract void apply(Actor e);
 
 }
 

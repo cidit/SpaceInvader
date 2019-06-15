@@ -1,9 +1,5 @@
 package props.entities;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import effects.Effect;
 import engine.phys.HitBox;
 import props.Entity;
 
@@ -18,8 +14,6 @@ public abstract class Actor extends Entity {
 	private final int max_health;
 	private int health;
 	private Status status;
-	
-	protected List<Effect> activeEffects = new ArrayList<Effect>();
 
 	public Actor(Allegiance allegiance, HitBox hitbox, int max_health) {
 		super(allegiance, hitbox);

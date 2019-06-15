@@ -1,6 +1,6 @@
 package props.items;
 
-import props.Item;
+import props.entities.Item;
 
 public class HealthPack extends Item {
 

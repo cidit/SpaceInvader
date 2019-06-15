@@ -1,6 +1,6 @@
 package props.entities;
 
-import engine.HitBox;
+import engine.phys.HitBox;
 import props.Entity;
 
 public abstract class Drone extends Entity {

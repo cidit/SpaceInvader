@@ -1,6 +1,6 @@
 package props.entities.actors;
 
-import engine.HitBox;
+import engine.phys.HitBox;
 import props.entities.Actor;
 
 public abstract class PlayableCharacter extends Actor {

@@ -1,23 +1,10 @@
 package props.entities.projectiles;
 
-import engine.HitBox;
+import engine.phys.HitBox;
 import props.entities.Actor;
 import props.entities.Projectile;
 
 public final class Bullet extends Projectile {
-
-	public Bullet(Allegiance allegiance, HitBox hitbox, float damageModifier) {
-		super(allegiance, hitbox, 30, 75, damageModifier);
-		// TODO Auto-generated constructor stub
-	}
-
-	@Override
-	public void impact(Actor[] targets) {
-		for (Actor target : targets) {
-			int damage = (int) (baseDamage * damageModifier);
-			target.getDamaged(damage);
-		}
-	}
 
 }
 /*

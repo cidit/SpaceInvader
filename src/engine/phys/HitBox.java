@@ -1,4 +1,7 @@
-package engine;
+package engine.phys;
+
+import engine.geom.Coordinate;
+import engine.geom.Dimension;
 
 /**
  * This class represents a rectangular area at a position using integers.
@@ -82,10 +85,6 @@ public class HitBox {
 		c3 = this.left <= other.right;
 		c4 = this.top >= other.bottom;
 		return c1 && c2 && c3 && c4;
-	}
-	
-	public boolean isContaindIn(HitBox other) {
-		return other.contains(this);
 	}
 
 }

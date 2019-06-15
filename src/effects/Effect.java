@@ -1,6 +1,6 @@
-package props.entities.effects;
+package effects;
 
-import engine.Counter;
+import engine.util.Counter;
 import props.entities.Actor;
 
 public abstract class Effect {

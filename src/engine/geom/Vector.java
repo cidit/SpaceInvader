@@ -1,4 +1,4 @@
-package engine;
+package engine.geom;
 
 /**
  * This class represents a length and a direction on a two-dimensional plane

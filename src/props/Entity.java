@@ -1,9 +1,9 @@
 package props;
 
-import engine.HitBox;
+import engine.phys.HitBox;
 
 /**
- * This class defines the characteristics of an Entity.
+ * This class defines a complex Prop that has an allegiance.
  * 
  * @author cidit
  *

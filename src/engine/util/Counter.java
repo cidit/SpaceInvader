@@ -1,4 +1,4 @@
-package engine;
+package engine.util;
 
 /**
  * Counter that counts with manual incrementations. The maximum incrementation

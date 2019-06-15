@@ -1,9 +1,9 @@
-package props.entities.effects.malus;
+package effects.bonus;
 
+import effects.Effect;
 import props.entities.Actor;
-import props.entities.effects.Effect;
 
-public class Heating extends Effect {
+public class SpeedBoost extends Effect {
 
 	@Override
 	public void apply(Actor e) {

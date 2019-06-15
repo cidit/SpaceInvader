@@ -1,9 +1,9 @@
-package props.entities.effects.malus;
+package effects.bonus;
 
+import effects.Effect;
 import props.entities.Actor;
-import props.entities.effects.Effect;
 
-public class Stun extends Effect {
+public class LifeSteal extends Effect {
 
 	@Override
 	public void apply(Actor e) {

@@ -1,4 +1,4 @@
-package engine;
+package engine.geom;
 
 /**
  * This class represents a rectangular area using integers.

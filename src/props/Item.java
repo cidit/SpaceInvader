@@ -1,6 +1,6 @@
 package props;
 
-import engine.HitBox;
+import engine.phys.HitBox;
 
 public abstract class Item extends Prop {
 

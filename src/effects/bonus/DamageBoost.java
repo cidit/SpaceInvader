@@ -1,7 +1,7 @@
-package props.entities.effects.bonus;
+package effects.bonus;
 
+import effects.Effect;
 import props.entities.Actor;
-import props.entities.effects.Effect;
 
 public class DamageBoost extends Effect {
 

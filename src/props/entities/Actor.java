@@ -3,10 +3,9 @@ package props.entities;
 import java.util.ArrayList;
 import java.util.List;
 
-import engine.HitBox;
+import effects.Effect;
+import engine.phys.HitBox;
 import props.Entity;
-import props.Entity.Allegiance;
-import props.entities.effects.Effect;
 
 /**
  * This class represents an Entity that can die.

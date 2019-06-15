@@ -1,4 +1,4 @@
-package engine;
+package engine.geom;
 
 import static java.lang.Math.pow;
 import static java.lang.Math.sqrt;

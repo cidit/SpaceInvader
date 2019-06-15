@@ -1,12 +1,12 @@
 package props;
 
-import engine.Coordinate;
-import engine.Dimension;
-import engine.HitBox;
-import engine.Vector;
+import engine.geom.Coordinate;
+import engine.geom.Dimension;
+import engine.geom.Vector;
+import engine.phys.HitBox;
 
 /**
- * This class represents an Entity that cannot die.
+ * This class represents an object that that occupies a space and can move.
  * 
  * @author cidit
  *
@@ -44,4 +44,5 @@ public abstract class Prop {
 	public void teleport(Coordinate coordinate) {
 		hitbox.move(coordinate);
 	}
+	
 }

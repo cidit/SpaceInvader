@@ -1,4 +1,4 @@
-package props.items;
+package props.entities.items;
 
 import props.entities.Item;
 import props.entities.Projectile;

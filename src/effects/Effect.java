@@ -12,6 +12,8 @@ public abstract class Effect {
 	}
 	
 	public abstract void apply(Actor e);
+	
+	public abstract <T extends Effect> void upgrade(T  e);
 
 }
 

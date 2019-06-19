@@ -10,4 +10,5 @@ public abstract class Item extends Entity {
 		// TODO Auto-generated constructor stub
 	}
 
+	public abstract void onPickup(Actor a);
 }

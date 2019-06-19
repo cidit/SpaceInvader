@@ -4,7 +4,7 @@ import engine.phys.HitBox;
 import props.Entity;
 
 /**
- * This class represents an Entity that can die.
+ * This class represents an Entity that can die and has a status.
  * 
  * @author cidit
  *
@@ -31,6 +31,7 @@ public abstract class Actor extends Entity {
 	}
 	
 	public void getDamaged(int damage) {
+		if (damage <= 0) return; 
 		health -= damage;
 		if (health < 0) {
 			health = 0; 
@@ -39,13 +40,25 @@ public abstract class Actor extends Entity {
 	}
 	
 	public void getHealed(int heal) {
+		if (heal <= 0) return;
 		health += heal;
 		if (health > max_health)
 			health = max_health;
+		if (status == Status.DEAD)
+			status = Status.ALIVE;
 	}
 	
 	public Status getStatus() {
 		return status;
+	}
+	
+	public void pickUp(Item i) {
+		switch(i.getClass().getSimpleName()) {
+		case "AmmoBox":
+		case "HealthPack":
+		case "PowerUp":
+			
+		}
 	}
 
 	/**

@@ -63,10 +63,10 @@ public class HitBox {
 	}
 
 	private void updateSides() {
-		right = coordinate.x + dimension.width;
-		left = coordinate.x;
-		top = coordinate.y + dimension.height;
-		bottom = coordinate.y;
+		right = coordinate.getX() + dimension.getWidth();
+		left = coordinate.getX();
+		top = coordinate.getY() + dimension.getHeight();
+		bottom = coordinate.getY();
 	}
 
 	public boolean intersects(HitBox other) {

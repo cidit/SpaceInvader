@@ -2,6 +2,8 @@ package props.entities;
 
 import engine.phys.HitBox;
 import props.Entity;
+import props.entities.items.AmmoBox;
+import props.entities.items.HealthPack;
 
 /**
  * This class represents an Entity that can die and has a status.
@@ -14,6 +16,7 @@ public abstract class Actor extends Entity {
 	private final int max_health;
 	private int health;
 	private Status status;
+	
 
 	public Actor(Allegiance allegiance, HitBox hitbox, int max_health) {
 		super(allegiance, hitbox);
@@ -53,10 +56,9 @@ public abstract class Actor extends Entity {
 	}
 	
 	public void pickUp(Item i) {
-		switch(i.getClass().getSimpleName()) {
-		case "AmmoBox":
-		case "HealthPack":
-		case "PowerUp":
+		if (i instanceof AmmoBox) {
+			 
+		} else if (i instanceof HealthPack) {
 			
 		}
 	}

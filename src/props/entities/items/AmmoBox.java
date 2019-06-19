@@ -18,5 +18,5 @@ public class AmmoBox extends Item {
 	public void onPickup(Player p) {
 		p.refillAmmo(quantity);
 	}
-
+	
 }

@@ -18,10 +18,4 @@ public class HealthPack extends Item {
 		p.getHealed(heal);
 	}
 
-	@Override
-	public void update() {
-		// TODO Auto-generated method stub
-		
-	}
-
 }

@@ -2,12 +2,13 @@ package props.entities.items;
 
 import engine.phys.HitBox;
 import engine.util.Counter;
+import engine.util.Updatable;
 import props.entities.Actor;
 import props.entities.Item;
 import props.entities.Projectile;
 import props.entities.actors.Player;
 
-public abstract class Weapon extends Item {
+public abstract class Weapon extends Item implements Updatable{
 
 	private Actor owner;
 	

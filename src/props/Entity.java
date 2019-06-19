@@ -38,6 +38,4 @@ public abstract class Entity extends Prop {
 		FRIENDLY, HOSTILE, NEUTRAL, NONE, PASSIVE;
 	}
 	
-	public abstract void update();
-	
 }

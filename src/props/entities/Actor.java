@@ -16,7 +16,6 @@ public abstract class Actor extends Entity {
 	private final int max_health;
 	private int health;
 	private Status status;
-	
 
 	public Actor(Allegiance allegiance, HitBox hitbox, int max_health) {
 		super(allegiance, hitbox);
@@ -53,14 +52,6 @@ public abstract class Actor extends Entity {
 	
 	public Status getStatus() {
 		return status;
-	}
-	
-	public void pickUp(Item i) {
-		if (i instanceof AmmoBox) {
-			 
-		} else if (i instanceof HealthPack) {
-			
-		}
 	}
 
 	/**

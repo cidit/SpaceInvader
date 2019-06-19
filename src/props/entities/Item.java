@@ -2,13 +2,13 @@ package props.entities;
 
 import engine.phys.HitBox;
 import props.Entity;
+import props.entities.actors.Player;
 
 public abstract class Item extends Entity {
 
 	public Item(HitBox hitbox) {
 		super(Allegiance.PASSIVE, hitbox);
-		// TODO Auto-generated constructor stub
 	}
 
-	public abstract void onPickup(Actor a);
+	public abstract void onPickup(Player p);
 }

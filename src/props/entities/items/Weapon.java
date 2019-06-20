@@ -54,7 +54,6 @@ public abstract class Weapon extends Item implements Updatable {
 
 	@Override
 	public void onPickup(Player p) {
-		// TODO Auto-generated method stub
-
+		p.setWeapon(this);
 	}
 }

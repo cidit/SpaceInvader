@@ -8,8 +8,8 @@ import props.entities.projectiles.Bullet;
 
 public class BulletGun extends Weapon {
 
-	public BulletGun(HitBox hitbox, Actor owner, int clipCapacity, int cooldownAfterFire) {
-		super(hitbox, owner, clipCapacity, cooldownAfterFire);
+	public BulletGun(HitBox hitbox, Actor owner) {
+		super(hitbox, owner, ???, ???, ???);
 		// TODO Auto-generated constructor stub
 	}
 

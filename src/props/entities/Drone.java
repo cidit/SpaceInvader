@@ -7,8 +7,8 @@ public abstract class Drone extends Entity {
 	
 	protected Actor owner;
 
-	public Drone(Allegiance allegiance, HitBox hitbox, Actor owner) {
-		super(allegiance, hitbox);
+	public Drone(HitBox hitbox, Actor owner) {
+		super(owner.getAllegiance(), hitbox);
 		this.owner = owner;
 	}
 

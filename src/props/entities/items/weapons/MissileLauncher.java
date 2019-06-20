@@ -8,8 +8,8 @@ import props.entities.projectiles.Missile;
 
 public class MissileLauncher extends Weapon {
 
-	public MissileLauncher(HitBox hitbox, Actor owner, int clipCapacity, int cooldownAfterFire) {
-		super(hitbox, owner, clipCapacity, cooldownAfterFire);
+	public MissileLauncher(HitBox hitbox, Actor owner) {
+		super(hitbox, owner, ???, ???, ???);
 		// TODO Auto-generated constructor stub
 	}
 

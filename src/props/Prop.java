@@ -14,7 +14,7 @@ import engine.phys.HitBox;
 public abstract class Prop {
 
 	private HitBox hitbox;
-	private Vector movement;
+	protected Vector movement;
 	
 	public Prop(HitBox hitbox) {
 		this.hitbox = hitbox;

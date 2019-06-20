@@ -9,8 +9,8 @@ import props.entities.projectiles.Laser;
 
 public class LaserCanon extends Weapon {
 
-	public LaserCanon(HitBox hitbox, Actor owner, int clipCapacity, int cooldownAfterFire) {
-		super(hitbox, owner, clipCapacity, cooldownAfterFire);
+	public LaserCanon(HitBox hitbox, Actor owner) {
+		super(hitbox, owner, ???, ???, ???);
 		// TODO Auto-generated constructor stub
 	}
 
